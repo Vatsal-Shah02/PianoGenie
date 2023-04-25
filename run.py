@@ -1,5 +1,5 @@
 #run this on a GPU instance
-#assumes you are inside the pno-ai directory
+#assumes you are inside the PianoGenie directory
 
 import os, time, datetime
 import torch
