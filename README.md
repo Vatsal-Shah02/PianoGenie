@@ -1,5 +1,5 @@
 # PianoGenie
-A transformer based model that generates Music Sequences
+A transformer based model that generates Music Sequences. Our goal for the music generation system is to enable musicians, composers, and music enthusiasts to easily generate original music pieces, while also pushing the boundaries of what is possible with artificial intelligence and music composition.
 
 ### About:
 A modified implementation of Pno-Ai's version of Google Magenta's [Music Transformer](https://magenta.tensorflow.org/music-transformer) in Python/Pytorch. This library is designed to train a neural network on Piano MIDI data to generate musical samples. MIDIs are encoded into "Event Sequences", a dense array of musical instructions (note on, note off, dynamic change, time shift) encoded as numerical tokens. A custom transformer model learns to predict instructions on training sequences, and in `generate.py` a trained model can randomly sample from its learned distribution. (It is recommended to 'prime' the model's internal state with a MIDI input.)
@@ -20,6 +20,9 @@ Train a model with
 
 `python run.py`
 
+You can also train the model on previously trainde model by using parameter:
+  `--checkpoint`: Optional path to saved model, if none provided, the model is trained from scratch.
+
 Find a model in the saved_models directory, copy its name
 
 Generate new samples with
@@ -28,7 +31,7 @@ Generate new samples with
 
   - Additional parameters:
   
-    `--input_live` : use a file `primer.midi` from the main directory when generating new samples
+    `--input_live` : use a file `twinkle.midi` from the main directory when generating new samples
     
     `--temps <float>` : control the temperature value of the selection for token generation
     
