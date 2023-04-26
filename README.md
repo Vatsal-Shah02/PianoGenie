@@ -1,4 +1,5 @@
 # PianoGenie 
+![image](https://user-images.githubusercontent.com/76422167/234459474-de8afd03-96b5-43c4-96be-26d839477e3f.png)
 
 [Get the report [CLICK ME]](https://github.com/Zedx07/PianoGenie/files/11328476/Report_gp_09_Shubham_Krutik_Vatsal.pdf)
 
@@ -9,6 +10,9 @@ A modified implementation of Pno-Ai's version of Google Magenta's [Music Transfo
 
 ### Training Data:
 The initial dataset comes from several years of recordings from the International Piano-e-Competition: over 1,000 performances played by professional pianists on a Yamaha Disklavier. Obtainable [here](https://magenta.tensorflow.org/datasets/maestro). A sufficiently large dataset (order of 50 MB) of piano MIDIs should be sufficient to train a model.
+
+### Architecture:
+![Archit](https://user-images.githubusercontent.com/76422167/234458602-0bda8eec-c431-45ff-adca-95ab11bc5c0e.jpg)
 
 ### Deploying Model:
 Navigate to the unzipped folder and create an environment with suitable dependencies
